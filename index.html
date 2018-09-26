@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scroll me baby ;)</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="main/main.css">
+    <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
+</head>
+<body>
+    
+    <section>
+        <h1 
+            data-sal-duration="1200"
+            data-sal="slide-down"
+            data-sal-delay="300"
+            data-sel-easing="ease-out-bounce"
+
+        >Scroll me baby, <br>oh yeah</h1>
+        
+    </section>
+    <section>
+        <div class="left" 
+            data-sal-duration="1200"
+            data-sal="slide-down"
+            data-sal-delay="300"
+            data-sel-easing="ease-out-bounce">
+
+            <h3>Look at me, weeeeee</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur corrupti dignissimos sequi nemo distinctio voluptate autem porro, ipsam soluta omnis aliquam earum iusto repellat cum ea. Totam excepturi tempore asperiores!</p>
+        </div>
+
+        <div class="right" 
+            data-sal-duration="1800"
+            data-sal="slide-up"
+            data-sal-delay="600"
+            data-sel-easing="ease-out-bounce">
+            
+            <img src="img/swipe_down.png">
+        </div>
+    </section>
+    <section>
+        <div class="one"
+            data-sal-duration="1200"
+            data-sal="slide-donw"
+            data-sal-delay="300"
+            data-sel-easing="ease-out-bounce"
+        >
+            <h3>Keep</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, placeat?</p>
+        </div>
+        <div class="two"
+            data-sal-duration="1200"
+            data-sal="slide-down"
+            data-sal-delay="500"
+            data-sel-easing="ease-out-bounce"
+        >
+            <h3>It</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, placeat?</p>
+        </div>
+        <div class="three"
+            data-sal-duration="1200"
+            data-sal="slide-down"
+            data-sal-delay="700"
+            data-sel-easing="ease-out-bounce"
+        >
+            <h3>Scrolling</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, placeat?</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="left" 
+            data-sal-duration="1200"
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sel-easing="ease-out-bounce">
+
+            <img src="img/swipe_down.png">
+        </div>
+    
+        <div class="right" 
+            data-sal-duration="1800"
+            data-sal="slide-down"
+            data-sal-delay="600"
+            data-sel-easing="ease-out-bounce">
+            
+            <h3>And, that is it :)</h3>
+        </div>
+        </section>
+    
+    <!-- https://github.com/mciastek/sal - animation scroll -->
+    <script src="./node_modules/sal.js/dist/sal.js"></script>
+    <script>
+       // sal();   -animation once
+
+        sal({
+            threshold: 1,
+            once: false,
+        });
+
+    </script>
+</body>
+</html>
