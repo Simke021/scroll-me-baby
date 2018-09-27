@@ -11,7 +11,7 @@
 </head>
 <body>
     
-    <section>
+    <section class="target4">
         <h1 
             data-sal-duration="1200"
             data-sal="slide-down"
@@ -19,9 +19,9 @@
             data-sel-easing="ease-out-bounce"
 
         >Scroll me baby, <br>oh yeah</h1>
-        
+        <button id="button">Click me</button>
     </section>
-    <section>
+    <section class="target2">
         <div class="left" 
             data-sal-duration="1200"
             data-sal="slide-down"
@@ -30,6 +30,7 @@
 
             <h3>Look at me, weeeeee</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur corrupti dignissimos sequi nemo distinctio voluptate autem porro, ipsam soluta omnis aliquam earum iusto repellat cum ea. Totam excepturi tempore asperiores!</p>
+            <button id="button3">Go down again</button>
         </div>
 
         <div class="right" 
@@ -41,7 +42,7 @@
             <img src="img/swipe_down.png">
         </div>
     </section>
-    <section>
+    <section class="target">
         <div class="one"
             data-sal-duration="1200"
             data-sal="slide-right"
@@ -69,9 +70,10 @@
             <h3>Scrolling</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, placeat?</p>
         </div>
+        <button id="button2">Go up</button>
     </section>
 
-    <section>
+    <section class="target3">
         <div class="left" 
             data-sal-duration="1200"
             data-sal="slide-up"
@@ -88,14 +90,48 @@
             data-sel-easing="ease-out-bounce">
             
             <h3>And, that is it :)</h3>
+            <button id="button4">Go on Top</button>
         </div>
-        </section>
+    </section>
     
     <!-- https://github.com/mciastek/sal - animation scroll -->
     <script src="./node_modules/sal.js/dist/sal.js"></script>
-    <script>
-       // sal();   -animation once
+    <script type="module">
+        // jump.js - smooth scrolling https://github.com/callmecavs/jump.js
+        import jump from './node_modules/jump.js/dist/jump.module.js';
 
+        var button = document.getElementById('button');
+        var button2 = document.getElementById('button2');
+        var button3 = document.getElementById('button3');
+        var button4 = document.getElementById('button4');
+
+        button.addEventListener('click', function (event) { 
+            jump('.target')
+        });
+
+        button2.addEventListener('click', function (event) { 
+            jump('.target2', {
+                duration: 2000,
+            })
+        });
+
+        button3.addEventListener('click', function (event) { 
+            jump('.target3', {
+                duration: 2000,
+                offset: 0                 
+            })
+        });
+
+        button4.addEventListener('click', function (event) { 
+            jump('.target4', {
+                duration: 5000,
+            })
+        });
+
+        
+
+
+       // sal();   -animation once
         sal({
             threshold: 1,
             once: false,

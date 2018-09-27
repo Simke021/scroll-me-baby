@@ -26,7 +26,7 @@ section {
 
     &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4) {
         background: #dde3e6;
-        height: calc(75vh - 8em);
+        height: calc(100vh - 8em);
         color: #4e5356;
         display: grid;
         grid-template-columns: 50% 50%;
@@ -55,4 +55,20 @@ section {
             font-size: 1em;
         }
     }
+}
+
+button{
+    padding: 1em;
+    background: #008bde;
+    border: 0;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#button4 {
+    margin-top: 1.5em;
 }
